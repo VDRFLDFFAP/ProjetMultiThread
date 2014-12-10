@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Sources:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="serveurftp-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Sources:war exploded" />
+    </root>
+  </artifact>
+</component>
