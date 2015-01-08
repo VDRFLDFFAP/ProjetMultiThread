@@ -1,4 +1,4 @@
-package fr.epsi.tools;
+package fr.epsi.thread;
 
 import java.io.DataInputStream;
 import java.io.IOException;
