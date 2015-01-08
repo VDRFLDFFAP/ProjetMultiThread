@@ -5,7 +5,24 @@ package fr.epsi.tools;
  */
 public class ConnexionBD {
 
-    
+    protected String user = "root";
+    protected String mdp = "root";
+    protected String nameBD = "ServeurFtp";
+    protected String Url = "jdbc:mysql://localhost/";
+    protected String dataClass;
+
+
+
+    public ConnexionBD(){
+
+    }
+
+
+    public void connexion(){
+
+
+    }
+
 
 
 
