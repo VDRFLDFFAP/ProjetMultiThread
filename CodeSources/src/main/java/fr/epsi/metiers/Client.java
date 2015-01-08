@@ -5,6 +5,11 @@ package fr.epsi.metiers;
  */
 public class Client {
 
+        protected String pseudo;
+        protected String mdp;
+        protected String ip;
+
+
 
 
 
