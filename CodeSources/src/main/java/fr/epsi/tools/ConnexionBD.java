@@ -1,8 +1,5 @@
 package fr.epsi.tools;
 
-import com.mysql.jdbc.Connection;
-
-import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -15,7 +12,7 @@ public class ConnexionBD {
     protected String mdp = "root";
     protected String url = "jdbc:mysql://localhost:3306/ServeurFtp";
     protected String dbClass = "com.mysql.jdbc.Driver";
-    protected Connection connexion = null;
+    protected java.sql.Connection connexion = null;
 
 
 
@@ -35,8 +32,9 @@ public class ConnexionBD {
         }
         catch (ClassNotFoundException e) {
             e.printStackTrace();
-        }
-        finally
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally
         {
             if(connexion != null){
                 try {
